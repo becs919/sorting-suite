@@ -13,30 +13,30 @@
 //   return array;
 // }
 
+// var myArray = [2, 1, 3, 5, 4];
 
-function bubbleSort() {
+function bubbleSort(array) {
   // START WITH OUT OF ORDER ARRAY
-  var myArray = [2, 1, 3, 5, 4];
 
   // LOOP THROUGH ARRAY
-  for(var i = 1; i < myArray.length; i++) {
+  for(var i = 1; i < array.length; i++) {
   // GET INDEX VALUES
-    var k = myArray[i];
+    var k = array[i];
   // LOOP THROUGH INDEXS STARTING WITH 0, COMPARE TO CURRENT INDEX, IF MORE THAN CURRENT INDEX
-    for(var j = i-1; j >= 0 && myArray[j] > k; j--){
+    for(var j = i-1; j >= 0 && array[j] > k; j--){
   // THEN THE INDEX MOVE TO RIGHT ONE SPACE
-       myArray[j+1] = myArray[j];
+       array[j+1] = array[j];
      };
   // IF NOT, LOOP TO THE NEXT INDEX BY INCREASING BY ONE
-    myArray[j+1] = k;
+    array[j+1] = k;
   };
 
-    return myArray;
-    console.log(myArray);
+    return array;
+    console.log(array);
 };
 
 
-bubbleSort();
+bubbleSort([2, 1, 3, 5, 4]);
 
 
 // ONLY COMAPRES AND MOVES 0 INDEX. NOT LOOPING THROUGH ALL OF ARRAY, PRACTICE
@@ -51,3 +51,6 @@ bubbleSort();
 //     return myArray
 //   }
 // }
+
+
+export default bubbleSort
