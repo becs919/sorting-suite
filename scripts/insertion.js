@@ -8,7 +8,7 @@ const insertionSort = (array) => {
       // if current is greater than next, switch with next
       array[j + 1] = array[j];
     }
-    // if not, current moves to neXt position and next moves
+    // if not, current moves to next position and next moves
     // loop through until sorted
     array[j + 1] = current;
   }

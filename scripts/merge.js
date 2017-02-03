@@ -6,11 +6,11 @@ const split = (array) => {
     // if array is longer than two
     // split into 2 -- left and right
     var middle = Math.floor(array.length/2);
-    var left = array.slice(0,middle);
+    var left = array.slice(0, middle);
     var right = array.slice(middle);
     // keep splitting until less than 2
     // then run merge function
-    return merge(split(left),split(right));
+    return merge(split(left), split(right));
     // recursion ^^^^^       ^^^^^
   }
 };
@@ -30,9 +30,11 @@ const merge = (left, right) => {
       completed.push(right.shift());
     }
   }
-  
+
   return completed.concat(left).concat(right);
 };
 
+
+split([7, 4, 1, 3, 5]);
 
 export default split;
