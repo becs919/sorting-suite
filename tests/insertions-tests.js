@@ -12,8 +12,8 @@ describe('insertion sort function', () => {
   });
 
   it('should return to me a sorted array with numbers', ()=> {
-    let array = [2, 1, 3, 5, 4];
-    expect(insertionSort(array)).to.deep.equal([1, 2, 3, 4, 5]);
+    let array = [7, 2, 1, 3, 5, 4];
+    expect(insertionSort(array)).to.deep.equal([1, 2, 3, 4, 5, 7]);
   });
 
   it('should return to me a sorted array with letter', ()=> {
